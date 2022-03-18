@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 100px 200px 150px;
+  grid-template-areas:
+    "avatar name name"
+    "avatar email phone"
+    "skills skills skills";
+  gap: 20px;
+  padding: 20px;
+}
+
+.avatar {
+  grid-area: avatar;
+}
+
+.name {
+  grid-area: name;
+}
+
+.email {
+  grid-area: email;
+}
+
+.phone {
+  grid-area: phone;
+}
+
+.skills {
+  grid-area: skills;
+}
